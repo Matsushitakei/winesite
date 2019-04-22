@@ -13,7 +13,7 @@ class CreateWineTable extends Migration
      */
     public function up()
     {
-        Schema::create('wine', function (Blueprint $table) {
+        Schema::create('wines', function (Blueprint $table) {
             $table->increments('id');
             $table->string('title'); // ニュースのタイトルを保存するカラム
             $table->string('body');  // ニュースの本文を保存するカラム
@@ -29,6 +29,6 @@ class CreateWineTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('wine');
+        Schema::dropIfExists('wines');
     }
 }
