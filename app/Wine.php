@@ -10,6 +10,8 @@ class Wine extends Model
 
   public static $rules = array(
       'title' => 'required',
+      'country' => 'required',
+      'title' => 'required',
       'body' => 'required',
   );
 }

@@ -26,7 +26,19 @@
                         </div>
                     </div>
                     <div class="form-group row">
-                        <label class="col-md-2" for="body">本文</label>
+                        <label class="col-md-2" for="title">産地</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="country" value="{{ old('country') }}">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2" for="title">価格</label>
+                        <div class="col-md-10">
+                            <input type="text" class="form-control" name="price" value="{{ old('price') }}">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-md-2" for="body">商品説明</label>
                         <div class="col-md-10">
                             <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
                         </div>

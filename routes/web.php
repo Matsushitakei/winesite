@@ -18,6 +18,7 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admin'],function() {
     Route::get('wine/create','Admin\WineController@add')->middleware('auth');
     Route::post('wine/create', 'Admin\WineController@create');
+    Route::get('wine', 'Admin\WineController@index')->middleware('auth');
 });
 
 Auth::routes();

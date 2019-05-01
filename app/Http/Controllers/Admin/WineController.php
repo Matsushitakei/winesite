@@ -43,4 +43,18 @@ class WineController extends Controller
       // admin/wine/createにリダイレクトする
       return redirect('admin/wine/create');
   }
+
+  public function index(Request $request)
+  {
+      $cond_title = $request->cond_title;
+      if ($cond_title != '') {
+          // 検索されたら検索結果を取得する
+          $posts = Wine::where('price', $cond_title)->get();
+      } else {
+          // それ以外はすべての追加商品を取得する
+          $posts = Wine::all();
+      }
+      return view('admin.wine.index', ['posts' => $posts, 'cond_title' => $cond_title]);
+  }
+
 }

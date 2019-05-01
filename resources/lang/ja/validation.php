@@ -146,7 +146,9 @@ return [
 
     'attributes' => [
       'title' => '商品名',
-       'body' => '本文'
+      'country' => '産地',
+      'price' => '価格',
+       'body' => '商品説明'
     ],
 
 ];
