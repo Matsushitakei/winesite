@@ -47,6 +47,14 @@
                                     <td>{{ str_limit($wine->country, 100) }}</td>
                                     <td>{{ str_limit($wine->price, 100) }}</td>
                                     <td>{{ str_limit($wine->body, 250) }}</td>
+                                    <td>
+                                        <div>
+                                            <a href="{{ action('Admin\WineController@edit', ['id' => $wine->id]) }}">編集</a>
+                                        </div>
+                                        <div>
+                                            <a href="{{ action('Admin\WineController@delete', ['id' => $wine->id]) }}">削除</a>
+                                        </div>
+                                    </td>
                                 </tr>
                             @endforeach
                         </tbody>
