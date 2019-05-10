@@ -10,7 +10,7 @@
         <div class="row">
             <div class="col-md-8 mx-auto">
               <h2>Ultrabigginer</h2>
-              <form action="{{ action('Admin\WineController@create') }}" method="post" enctype="multipart/form-data">
+              <form action="{{ action('Admin\WineController@update') }}" method="post" enctype="multipart/form-data">
 
                     @if (count($errors) > 0)
                         <ul>
@@ -22,25 +22,25 @@
                     <div class="form-group row">
                         <label class="col-md-2" for="title">商品名</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="title" value="{{ old('title') }}">
+                            <input type="text" class="form-control" name="title" value="{{ $wine_form->title }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="title">産地</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="country" value="{{ old('country') }}">
+                            <input type="text" class="form-control" name="country" value="{{ $wine_form->country }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="title">価格</label>
                         <div class="col-md-10">
-                            <input type="text" class="form-control" name="price" value="{{ old('price') }}">
+                            <input type="text" class="form-control" name="price" value="{{ $wine_form->price }}">
                         </div>
                     </div>
                     <div class="form-group row">
                         <label class="col-md-2" for="body">商品説明</label>
                         <div class="col-md-10">
-                            <textarea class="form-control" name="body" rows="20">{{ old('body') }}</textarea>
+                            <textarea class="form-control" name="body" rows="20">{{ $wine_form->body }}</textarea>
                         </div>
                     </div>
                     <div class="form-group row">
