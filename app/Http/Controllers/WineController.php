@@ -10,7 +10,9 @@ use App\Wine;
 
 class WineController extends Controller
 {
-  $cond_title = $request->cond_title;
+  public function index(Request $request)
+  {
+      $cond_title = $request->cond_title;
       //$cond_title が空白でない場合は、記事を検索して取得する
       if ($cond_title != '') {
           $posts = Wine::where('title', $cond_title).orderBy('updated_at', 'desc')->get();
