@@ -1,12 +1,16 @@
 body {
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #000;
-  color: #fff;
+  background-color: #dee2e621;
+  color: #000;
 }
 
+.py-4{
+   color: #fff;
+   background-color: #000;
+}
 .navbar-laravel {
-  background-color: #000;
+  background-color: #761777;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 
@@ -39,3 +43,173 @@ body {
   background-color: rgba(0, 0, 0, 0.25);
 }
 
+/* ↓オリジナルのcss */
+header {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.container {
+  width: 920px;
+  margin: 0 auto 40px auto;
+}
+
+.header-title-area {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  font-size: 50px;
+  padding-top: 30px;
+  padding-left: 25px;
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.text-sub {
+  width:50%;
+  padding-left: 20px;
+}
+
+.header-navigation {
+  width:90%;
+  background-color: #efefef;
+  padding: 20px 0;
+  margin-left: 55px;
+}
+
+.header-navigation:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
+
+.header-navigation li {
+  float:left;
+  padding: 0 30px;
+  text-align: center;
+  list-style-type: none;
+}
+
+.header-navigation li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.left-contents {
+  width:600px;
+  float: left;
+}
+
+.right-contents {
+  width: 300px;
+  float: right;
+}
+
+.top-image {
+  width: 300px;
+}
+
+
+/*オリジナルのcss(トップページのメイン部分)*/
+
+.text-title {
+   width: 25%;
+   padding: 10px 20px;
+   margin: 20px;
+   text-align: center;
+   font-weight: bold;
+   color: #000;/*文字色*/
+   border: solid 3px #800080;/*線*/
+   border-radius: 10px;/*角の丸み*/
+}
+.text-title2 {
+   width: 40%;
+   padding: 10px 20px;
+   margin: 20px;
+   text-align: center;
+   font-weight: bold;
+   color: #000;/*文字色*/
+   border: solid 3px #800080;/*線*/
+   border-radius: 10px;/*角の丸み*/
+}
+.table-of-contents {
+  width:35%;
+  margin-top:25px;
+  margin-bottom: 100px;
+  background-color: #2d9c551c;
+}
+
+.table-of-contents li {
+  padding: 10px 0;
+}
+.Introduction {
+  margin-bottom: 10px;
+}
+.bs {
+  margin-bottom: 50px;
+}
+
+.step-1 {
+  padding: 0.5em 1em;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    color: #232323;
+    background: #d59ad80d;
+    border-left: solid 10px #7f50bff5;
+
+}
+
+.hinshu-contents-red {
+  float: left;
+  margin-top: 30px;
+  position:relative;
+  padding: 35px 20px 20px;
+
+  width: 40%;
+  color: #555555; /* 文字色 */
+  background-color: rgba(128,0,0,0.2);
+  box-shadow: inset 0 0 40px rgba(204, 186, 136,1), 0 2px 2px #ccc;
+ }
+
+ .title-tape {
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  padding: 4px 20px;
+  font-weight: bold;
+  background-color: rgba(255,255,255,.4);
+  border-left: 2px dotted rgba(0,0,0,.1);
+  border-right: 2px dotted rgba(0,0,0,.1);
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  transform: rotate(-5deg);
+ }
+}
+
+.hinshu-contents-red li {
+  padding: 10px 0;
+}
+
+.hinshu-contents-white{
+  float: left;
+  position:relative;
+  margin-top:30px;
+  margin-left: 20px;
+  padding-top: 28px;
+  padding-bottom: 20px;
+  width: 40%;
+  color: #555555; /* 文字色 */
+  background-color: rgba(30,100,10,0.2);
+  box-shadow: inset 0 0 40px rgba(204, 186, 136,1), 0 2px 2px #ccc;
+}
+
+
+.hinshu-contents-white li {
+  padding-top:2px;
+}
+
+.hinshu:after {
+  clear: both;
+  display: block;
+  content: " ";
+}
